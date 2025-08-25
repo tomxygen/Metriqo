@@ -2,7 +2,7 @@ from nicegui import ui
 import yfinance as yf
 
 
-ui.page('/')
+@ui.page('/')
 def main_page():
     def get_ticker():
         ticker = text_input.value.upper()
